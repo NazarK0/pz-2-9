@@ -1,0 +1,46 @@
+body {
+  height: 100vh;
+}
+.container {
+  display: flex;
+  width: 70vw;
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.playground {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-auto-rows: repeat(5,1fr);
+  gap: 4px;
+  border: 1px dashed #000;
+  margin: 25px;
+  background-color: rgb(199, 199, 199);
+}
+
+img{
+  width: 90px;
+  height: 90px;
+  border-radius: 4px;
+  padding: 3px;
+}
+.playground img {
+  background-color: rgb(255, 255, 255);
+}
+.guess-img {
+  border: 1px solid rgb(88, 163, 78);
+}
+
+.btn {
+  margin: 10px;
+}
+
+.control-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
