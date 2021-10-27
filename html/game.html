@@ -9,6 +9,15 @@
   <link rel="stylesheet" href="../js/jquery-ui-1.13.0.custom/jquery-ui.structure.min.css">
   <link rel="stylesheet" href="../js/jquery-ui-1.13.0.custom/jquery-ui.theme.min.css">
   <link rel="stylesheet" href="../css/game.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="../assets/icons/site.webmanifest">
+  <link rel="mask-icon" href="../assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="../assets/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="msapplication-config" content="../assets/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
   <script src="../js/jquery-3.6.0.min.js"></script>
   <script src="../js/jquery-ui-1.13.0.custom/jquery-ui.min.js"></script>
   <script src="https://kit.fontawesome.com/539e519a18.js" crossorigin="anonymous"></script>
@@ -16,7 +25,7 @@
   <script src="../js/game.js" defer></script>
 </head>
 <body>
-  <a id="back-btn" class="back-btn btn" href="../index.html"><i class="fas fa-caret-left"></i>&nbsp;Назад</a>
+  <a id="back-btn" class="back btn" href="../index.html"><i class="fas fa-caret-left"></i>&nbsp;Назад</a>
   <div class="container">
     <div class="playground">
       <img src="" alt="" id="image1" class="image1">
@@ -46,9 +55,10 @@
       <img src="" alt="" id="image25" class="image25">
     </div>
     <div class="control-panel">
-      <button class="btn">Почати з початку</button>
-      <img id="guess-img" class="guess-img">
+      <button id="drop-game" class="btn drop-game">Почати з початку</button>
+      <img id="guess-img" class="guess-img ui-draggable">
     </div>
   </div>
+  <div id="dialog-win" class="ui-dialog"></div>
 </body>
 </html>

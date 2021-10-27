@@ -6,5 +6,12 @@ const imgPlaygroundRandomizer = (imgPathsArray, outputCount=25) => {
     resultImages.add(imgPathsArray[rIndex]);
   } while (resultImages.size !== outputCount);
 
-  return Array.from(resultImages);
-}
+  const guessIndex = Math.floor(Math.random() * outputCount);
+  const imgArray = Array.from(resultImages);
+
+  return {
+    playground: imgArray,
+    guess: imgArray[guessIndex],
+  }
+};
+
