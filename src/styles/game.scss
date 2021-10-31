@@ -1,10 +1,12 @@
 body {
   height: 100vh;
   background-color: #aaaaaa;
+
+  *{
+    box-sizing: border-box;
+  }
 }
-body *{
-  box-sizing: border-box;
-}
+
 .container {
   display: flex;
   width: 70vw;
