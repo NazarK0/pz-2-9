@@ -62,7 +62,7 @@ function game() {
   const imgPathsArray = [];
 
   for (let imgIdx = 0; imgIdx < COUNT_IMAGES; imgIdx++) {
-    imgPathsArray.push(`/assets/img/${imgIdx + 1}.webp`);
+    imgPathsArray.push(`../assets/img/${imgIdx + 1}.webp`);
   }
 
   const images = imgPlaygroundRandomizer(imgPathsArray);
